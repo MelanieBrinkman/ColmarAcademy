@@ -73,6 +73,10 @@ p {
   line-height: 1.4;
 }
 
+.container {
+  display: flex;
+}
+
 /*Header section*/
 
 header {
@@ -127,14 +131,10 @@ header {
 
 /*Main banner section*/
 
-.main-banner {
-  display: flex;
-  background-color: #dcdcdc;
-}
-
 .main-content {
   display: flex;
   justify-content: flex-start;
+  background-color: #C8C8C8;
 }
 
 .main-image {
@@ -182,14 +182,10 @@ header {
 
 /*Info section*/
 
-.info {
-  display: flex;
-  background-color: #E8E8E8;
-}
-
 .info-content {
   display: flex;
   justify-content: flex-start;
+  background-color: #E8E8E8;
 }
 
 .head-info {
@@ -208,10 +204,12 @@ header {
 
 .head-info p {
   margin-bottom: 3rem;
+  padding-right: 4rem;
 }
 
 .head-info span {
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .sub-info {
@@ -220,20 +218,19 @@ header {
   justify-content: flex-start;
   width: 40%;
   padding: 0;
-  border-left:1px solid #dcdcdc;
+  border-left:1px solid #C8C8C8;
 }
 
 .sub {
   display: flex;
   background-color: #E8E8E8;
   padding: 1rem 1rem;
-  border-bottom:1px solid #dcdcdc;
+  border-bottom:1px solid #C8C8C8;
   transition: all 500ms ease-in;
 }
 
 .sub:hover {
-  background-color: #dcdcdc;
-
+  background-color: #C8C8C8;
 }
 
 .sub-image {
@@ -259,5 +256,62 @@ header {
   margin-bottom: 0.5rem;
 }
 .sub-text p {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.sub-text a {
+  color: #6495ED;
+}
+
+/*Learning section*/
+
+.learning-content {
+  background-color: #C8C8C8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+
+}
+
+.learning-title {
+  padding-top: 3rem;
+}
+
+.learning-subs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 3.5rem;
+}
+
+.course {
+  background-color: #FFF;
+  color: #484848;
+  width: 30%;
+  margin: 1rem;
+  transition: all 750ms ease-in-out;
+}
+
+.course:hover {
+  background-color: #484848;
+  color: #FFF;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-info {
+  margin-left: 0rem;
+  padding: 1.5rem;
+}
+
+.course-info h3 {
+  margin-bottom: 1rem;
+}
+
+.course-info p {
   margin-bottom: 0.5rem;
 }
