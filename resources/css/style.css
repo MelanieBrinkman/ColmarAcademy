@@ -103,7 +103,6 @@ header {
 
 #colmar {
   font-weight: bold;
-
 }
 
 #academy {
@@ -151,11 +150,12 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  margin: 1.5rem;
 }
 
 
-.main-info h1, h3 {
+.main-info h1,
+.main-info h3 {
+  padding-left: 2rem;
   margin-bottom: 2rem;
   max-width: 80%;
 }
@@ -169,6 +169,7 @@ header {
   border: 1px solid #484848;
   max-width: 73%;
   padding: 1rem 0;
+  margin-left: 2rem;
   font-size: 1.2rem;
   transition: all 500ms ease-in;
 }
@@ -178,7 +179,6 @@ header {
   border: 1px solid #484848;
   color: #484848;
 }
-
 
 /*Info section*/
 
@@ -197,7 +197,8 @@ header {
   max-width: 100%;
 }
 
-.head-info h2, h3 {
+.head-info h2,
+.head-info h3 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -247,7 +248,6 @@ header {
 
 .sub-image img {
   max-width: 100%;
-  max-height: auto;
   margin: 1rem 0.5rem;
 }
 
@@ -260,9 +260,9 @@ header {
 }
 
 .sub-text h3 {
-  margin-top:0;
   margin-bottom: 0.5rem;
 }
+
 .sub-text p {
   margin-bottom: 0.75rem;
   font-size: 1.1rem;
@@ -314,12 +314,10 @@ header {
 }
 
 .course-info {
-  margin-left: 0rem;
   padding: 1.5rem;
 }
 
 .course-info h3 {
-  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
