@@ -77,9 +77,10 @@ p {
   display: flex;
 }
 
+
 /*Header section*/
 
-header {
+.header-desktop {
   display: flex;
   height: 4rem;
   width: 100%;
@@ -126,6 +127,29 @@ header {
 
 .navigation li a:hover {
   font-weight:bold;
+}
+
+.header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 540px){
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    height: 4rem;
+    color: #000;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header-mobile img {
+    height: 60%;
+  }
 }
 
 /*Main banner section*/
@@ -178,6 +202,28 @@ header {
   background-color: #fff;
   border: 1px solid #484848;
   color: #484848;
+}
+
+@media only screen and (max-width: 540px){
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-info {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .main-info h1 {
+    font-size: 2.5rem;
+  }
+
 }
 
 /*Info section*/
@@ -246,7 +292,11 @@ header {
   width: 35%
 }
 
-.sub-image img {
+.mobile-image {
+  display: none;
+}
+
+.desktop-image {
   max-width: 100%;
   margin: 1rem 0.5rem;
 }
@@ -272,6 +322,45 @@ header {
   color: #6495ED;
 }
 
+@media only screen and (max-width: 540px){
+  .head-info {
+    display: none;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+
+  .sub-image {
+    width: 100%;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .sub-image img {
+    width: 100%;
+    height: 60%;
+    margin-top: 1rem;
+  }
+
+  .sub-info {
+    width: 100%;
+  }
+
+  .sub {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-text {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+
 /*Learning & thesis section*/
 
 .content {
@@ -289,7 +378,7 @@ header {
   padding-top: 3rem;
 }
 
-.learning-subs {
+.course-subs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,6 +425,44 @@ header {
 .head-info video {
   max-width: 100%;
   height: auto;
+}
+
+.course-mobile {
+  display:none;
+}
+
+
+@media only screen and (max-width: 540px){
+  .content.learning {
+    background-color: #E8E8E8;
+  }
+
+  .course-subs {
+    display: none;
+  }
+
+  .course-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2rem 1rem 2rem 1rem;
+    border-bottom: 1px solid #C8C8C8; /*MOVE TO BORDER-TOP THESIS!!!*/
+  }
+
+  .course-mobile h3 {
+    background-color: #C8C8C8;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .course-mobile a{
+    color: #484848;
+  }
+
+  .info-content.thesis {
+    display: none;
+  }
+
 }
 
 /*footer section*/

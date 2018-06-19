@@ -13,25 +13,35 @@
 <!-- Header content -->
 
     <header>
-      <div class="logo">
-        <img src="./resources/images/ic-logo.svg" alt="Logo Colmar Academy">
-        <span id="colmar">COLMAR</span>
-        <span id="academy">ACADEMY</span>
+      <div class="header-desktop">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="Logo Colmar Academy">
+          <span id="colmar">COLMAR</span>
+          <span id="academy">ACADEMY</span>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#campus">On campus</a></li>
+            <li><a href="#learning">Online</a></li>
+            <li><a href="#exhibit">For companies</a></li>
+            <li><a href="#start">Sign in</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li><a href="#">On campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For companies</a></li>
-          <li><a href="#">Sign in</a></li>
-        </ul>
-      </nav>
+
+      <div class="header-mobile">
+        <img src="./resources/images/ic-logo.svg" alt="Logo Colmar Academy">
+        <img src="./resources/images/ic-on-campus.svg" alt="Icon schooldesk">
+        <i class="fa fa-desktop fa-2x"></i>
+        <i class="fa fa-user fa-2x"></i>
+      </div>
+
     </header>
 
 <!-- Main banner content -->
 
     <div class="container">
-      <div class="main-content">
+      <div id="start" class="main-content">
 
         <div class="main-image">
           <img src="./resources/images/banner.jpg" alt="Students reading and writing around table">
@@ -47,7 +57,7 @@
 
 <!-- Info section content -->
 
-    <div class="container">
+    <div id="campus" class="container">
       <div class="info-content">
 
         <div class="head-info">
@@ -60,7 +70,8 @@
         <div class="sub-info detail">
           <div class="sub box">
             <div class="sub-image">
-              <img src="./resources/images/information-orientation.jpg" alt="Students walking, picture shows their shadows">
+              <img class="desktop-image" src="./resources/images/information-orientation.jpg" alt="Students walking, picture shows their shadows">
+              <img class="mobile-image" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking, picture shows their shadows">
             </div>
             <div class="sub-text">
               <h3>Orientation date</h3>
@@ -71,7 +82,8 @@
 
           <div class="sub box">
             <div class="sub-image">
-              <img src="./resources/images/information-campus.jpg" alt="Students sitting around a table">
+              <img class="desktop-image" src="./resources/images/information-campus.jpg" alt="Students sitting around a table">
+              <img class="mobile-image" src="./resources/images/information-campus-mobile.jpg" alt="Students sitting around a table">
             </div>
             <div class="sub-text">
               <h3>Our Campus</h3>
@@ -82,7 +94,8 @@
 
           <div class="sub box">
             <div class="sub-image">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+              <img class="desktop-image" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+              <img class="mobile-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
             </div>
             <div class="sub-text">
               <h3>Our guest lecture</h3>
@@ -97,13 +110,13 @@
 
 <!-- Learning section content-->
 
-    <div class="container">
+    <div id="learning" class="container">
       <div class="content learning">
         <div class="title learning">
           <h2>Start learning</h2>
         </div>
 
-        <div class="learning-subs">
+        <div class="course-subs">
 
           <a href="#" class="course">
             <img src="./resources/images/course-software.jpg" alt="Desk with computer screens">
@@ -160,20 +173,27 @@
           </a>
 
         </div>
-
+        <div class="course-mobile">
+          <a href="#"><h3>Software engineering</h3></a>
+          <a href="#"><h3>Computer Art</h3></a>
+          <a href="#"><h3>Design</h3></a>
+          <a href="#"><h3>Data</h3></a>
+          <a href="#"><h3>Business</h3></a>
+          <a href="#"><h3>Marketing</h3></a>
+        </div>
       </div>
     </div>
 
 <!-- Thesis section content -->
 
-    <div class="container">
+    <div id="exhibit" class="container">
       <div class="content thesis">
 
         <div class="title thesis">
           <h2>Thesis exhibit</h2>
         </div>
 
-        <div class="info-content">
+        <div class="info-content thesis">
 
           <div class="head-info">
             <video src="./resources/videos/thesis.mp4" autoplay loop> Video not supported </video>
@@ -184,7 +204,7 @@
           <div class="sub-info">
             <div class="sub thesis">
               <div class="sub-image">
-                <img src="./resources/images/thesis-fisma.jpg" alt="Person making notes next to mobile phone">
+                <img class="desktop-image" src="./resources/images/thesis-fisma.jpg" alt="Person making notes next to mobile phone">
               </div>
               <div class="sub-text">
                 <h3>Fisma: Design and Prototype</h3>
@@ -194,7 +214,7 @@
 
             <div class="sub">
               <div class="sub-image">
-                <img src="./resources/images/thesis-now-and-then.jpg" alt="New York">
+                <img class="desktop-image" src="./resources/images/thesis-now-and-then.jpg" alt="New York">
               </div>
               <div class="sub-text">
                 <h3>Now and then</h3>
