@@ -229,7 +229,7 @@ header {
   display: flex;
   background-color: #E8E8E8;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   transition: all 500ms ease-in;
 }
 
@@ -319,6 +319,7 @@ header {
 }
 
 .course-info h3 {
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -337,4 +338,14 @@ header {
 .head-info video {
   max-width: 100%;
   height: auto;
+}
+
+/*footer section*/
+
+footer {
+  background-color: #E8E8E8;
+  border-top: 1px solid #C8C8C8;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
 }
