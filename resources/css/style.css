@@ -197,7 +197,7 @@ header {
   max-width: 100%;
 }
 
-.head-info h2 {
+.head-info h2, h3 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -218,15 +218,23 @@ header {
   justify-content: flex-start;
   width: 40%;
   padding: 0;
+}
+
+.sub-info.detail {
   border-left:1px solid #C8C8C8;
 }
+
 
 .sub {
   display: flex;
   background-color: #E8E8E8;
+  align-items: center;
   padding: 1rem 1rem;
-  border-bottom:1px solid #C8C8C8;
   transition: all 500ms ease-in;
+}
+
+.sub.box {
+  border-bottom: 1px solid #C8C8C8;
 }
 
 .sub:hover {
@@ -246,13 +254,13 @@ header {
 .sub-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   width: 65%;
   margin-left: 2rem;
 }
 
 .sub-text h3 {
+  margin-top:0;
   margin-bottom: 0.5rem;
 }
 .sub-text p {
@@ -264,18 +272,20 @@ header {
   color: #6495ED;
 }
 
-/*Learning section*/
+/*Learning & thesis section*/
 
-.learning-content {
-  background-color: #C8C8C8;
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width:100%;
-
 }
 
-.learning-title {
+.content.learning {
+  background-color: #C8C8C8;
+}
+
+.title {
   padding-top: 3rem;
 }
 
@@ -291,7 +301,7 @@ header {
   color: #484848;
   width: 30%;
   margin: 1rem;
-  transition: all 750ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .course:hover {
@@ -314,4 +324,17 @@ header {
 
 .course-info p {
   margin-bottom: 0.5rem;
+}
+
+.content.thesis {
+  background-color: #E8E8E8;
+}
+
+.sub.thesis {
+  margin-top: 2rem;
+}
+
+.head-info video {
+  max-width: 100%;
+  height: auto;
 }
