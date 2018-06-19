@@ -176,7 +176,6 @@ p {
   width: 40%;
 }
 
-
 .main-info h1,
 .main-info h3 {
   padding-left: 2rem;
@@ -223,7 +222,6 @@ p {
   .main-info h1 {
     font-size: 2.5rem;
   }
-
 }
 
 /*Info section*/
@@ -331,7 +329,6 @@ p {
     display: none;
   }
 
-
   .sub-image {
     width: 100%;
   }
@@ -431,6 +428,9 @@ p {
   display:none;
 }
 
+.mobile-video {
+  display: none;
+}
 
 @media only screen and (max-width: 540px){
   .content.learning {
@@ -446,7 +446,6 @@ p {
     flex-direction: column;
     width: 90%;
     padding: 2rem 1rem 2rem 1rem;
-    border-bottom: 1px solid #C8C8C8; /*MOVE TO BORDER-TOP THESIS!!!*/
   }
 
   .course-mobile h3 {
@@ -463,6 +462,19 @@ p {
     display: none;
   }
 
+  .content.thesis {
+    border-top: 1px solid #C8C8C8;
+  }
+
+  .mobile-video {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .mobile-video video {
+    width: 100%;
+  }
 }
 
 /*footer section*/
@@ -474,3 +486,9 @@ footer {
   text-align: left;
   font-size: 0.75rem;
 }
+
+@media only screen and (max-width: 540px){
+  footer {
+    border-style: none;
+    font-size: 1rem;
+  }
