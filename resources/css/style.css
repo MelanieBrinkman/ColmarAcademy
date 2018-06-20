@@ -110,22 +110,22 @@ p {
   color: #8a8a8a;
 }
 
-.navigation {
+.index {
   display: flex;
   margin-right: 1.5rem;
 }
 
-.navigation li {
+.index li {
   font-size: 1.2rem;
   padding: 0.5rem;
 }
 
-.navigation li a {
+.index li a {
   color: #484848;
   transition: font-weight 500ms linear;
 }
 
-.navigation li a:hover {
+.index li a:hover {
   font-weight:bold;
 }
 
@@ -133,7 +133,7 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 480px){
   .header-desktop {
     display: none;
   }
@@ -149,6 +149,10 @@ p {
 
   .header-mobile img {
     height: 60%;
+  }
+
+  .header-mobile a {
+    color: #000;
   }
 }
 
@@ -203,7 +207,7 @@ p {
   color: #484848;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 480px){
   .main-content {
     display: flex;
     flex-direction: column;
@@ -320,7 +324,7 @@ p {
   color: #6495ED;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 480px){
   .head-info {
     display: none;
   }
@@ -432,7 +436,7 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 480px){
   .content.learning {
     background-color: #E8E8E8;
   }
@@ -454,7 +458,13 @@ p {
     margin-bottom: 0.5rem;
   }
 
-  .course-mobile a{
+  .course-mobile h3:hover {
+    color: #FFF;
+    background-color: #484848;
+    transition: all 1s ease-in-out;
+  }
+
+  .course-mobile a {
     color: #484848;
   }
 
@@ -487,8 +497,9 @@ footer {
   font-size: 0.75rem;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 480px){
   footer {
     border-style: none;
     font-size: 1rem;
   }
+}
